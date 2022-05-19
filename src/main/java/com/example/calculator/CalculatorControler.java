@@ -14,4 +14,12 @@ public class CalculatorControler {
           @RequestParam int b){
         return a+b;
     }
+    @RequestMapping("/mult")
+    public int mult(
+          @RequestParam int a,
+          @RequestParam int b){
+        return a*b;
+    }
+
+
 }
