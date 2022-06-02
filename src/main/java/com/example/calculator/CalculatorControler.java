@@ -20,6 +20,31 @@ public class CalculatorControler {
           @RequestParam int b){
         return a*b;
     }
+    @RequestMapping("/minus")
+    public int minus(
+          @RequestParam int a,
+          @RequestParam int b){
+        return a-b;
+    }
+    @RequestMapping("/divided")
+    public int divided(
+          @RequestParam int a,
+          @RequestParam int b){
+        return a/b;
+    }
+    @RequestMapping("/potent")
+    public double potent(
+          @RequestParam double a,
+          @RequestParam double power){
+
+        return Math.pow(a, power);
+    }
+    @RequestMapping("/root")
+    public double squareRoot(
+          @RequestParam double a){
+
+        return Math.pow(a, 0.5);
+    }
 
 
 }
