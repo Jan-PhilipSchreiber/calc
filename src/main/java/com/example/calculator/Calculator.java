@@ -18,10 +18,12 @@ public class Calculator {
         return a - b;
     }
 
+
     public double divided(double a, double b) {
             if (0==b){
                 throw new ArithmeticException();
             }
+
         return a / b;
     }
 
