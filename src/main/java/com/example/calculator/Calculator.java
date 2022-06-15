@@ -19,6 +19,9 @@ public class Calculator {
     }
 
     public int divided(int a, int b) {
+        if (0==b){
+            throw new ArithmeticException();
+        }
         return a / b;
     }
 
