@@ -52,7 +52,15 @@ class CalculatorTest {
         double result = calculator.divided(a, b);
         assertEquals(expectedResult, result);
     }
+@Test
+void divTestDivideZero(){
+        int a=10;
+        int b= 0;
 
+        assertThrows(ArithmeticException.class,()->{
+            calculator.divided(a,b);
+        });
+}
     @Test
     void potentTest() {
         double a = 2;
