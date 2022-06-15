@@ -33,9 +33,9 @@ public class CalculatorControler {
     }
 
     @RequestMapping("/divided")
-    public int divided(
-            @RequestParam int a,
-            @RequestParam int b) {
+    public double divided(
+            @RequestParam double a,
+            @RequestParam double b) {
         return calculator.divided(a, b);
     }
 
